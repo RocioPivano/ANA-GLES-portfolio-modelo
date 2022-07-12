@@ -16,6 +16,8 @@ header{
     padding-left: 40px;
     padding-bottom: 10px;
     letter-spacing: 8px;
+    
+    
 }
 .nav__lista{
     display:flex;
@@ -23,8 +25,7 @@ header{
     height: 70px;
     align-items: center;
     justify-content: space-between;
-
-   
+  
 }
 .nav__lista__item a {
     text-decoration: none;
@@ -52,8 +53,30 @@ header{
     font-family: 'Roboto', sans-serif;
     padding: 20px;
     
-    
 }
+/*AQUI EMPECE A PROBAR BOOTSTRAP EN EL NAV */
+.navbar-nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-link{
+    text-decoration: none;
+    color: #3D3D3D;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 6px;
+}
+.active {
+    text-decoration:none;
+    color: #838e83; 
+    font-family: 'Roboto', sans-serif;
+    height: auto;
+    font-weight: 500;
+    border: solid #838e83; 
+    letter-spacing: 6px;
+}
+
+
 body{
     min-height: 100vh;
 }
@@ -76,15 +99,10 @@ main{
 }
 /*HOME*/
 /*carrousel de imagenes*/
-.home__carrousel__contenedor{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.carousel-inner{
+    padding: 10px;
 }
-.home__galeria{
-    width: 500px;
-    margin: 10px;
-}
+
 /*SOBRE MI*/
 .sobremi__contenedor{
     display: flex;
@@ -116,12 +134,51 @@ main{
 }
 
 
-/*PORTFOLIO*/
-.portfolio-img{
-    width: 45%;
-    margin: 10px;
+/*PORTFOLIO */ 
+.grilla{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px 250px 400px 250px 250px;
+    gap: 30px;
+    justify-content: center;
+    height: 100%;
+  
+}
+.grilla__item{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+.grilla__item:hover {
+    transform: scale(1.3);
+    transition: 0.8s;
+   
+}
+.item1{
+    grid-row: span 2;
+}
+.item5{
+    grid-column: span 2;
+}
+@media only screen and (max-width: 400px) {
+.grilla{
+    display:block;
+    
+}   
+.grilla__item img{
+    height: 300px;
+}
+header{
+    width: 100vw;
     
 }
+footer{
+    width: 100vw;
+} 
+}
+   
+
 /*TRABAJOS*/  
 .trabajo__section1{
     display: flex;
@@ -168,8 +225,9 @@ main{
     margin: 30px;
 }
 .contacto__section__form{ 
+    display: flex;
     background-color: #EBD8D0;
-    width: 50%;
+    width: 30%;
     margin: 30px;
     height: 300px;
  
@@ -217,11 +275,11 @@ footer{
     height: 150px;
  }
   
-.footer__tx{
-    
+h5{
     color:black;
-    font-family: 'Roboto', sans-serif ;
     letter-spacing: 4px;
+    font-family: 'Poppins', sans-serif; font-family: 'Roboto', sans-serif;
+    word-spacing: 4px 
 }
     
 .footer__logoinstagram{

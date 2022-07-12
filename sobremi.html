@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
     <title>ANA GLES / Sobre mi</title>
 </head>
 <body>
@@ -23,23 +24,33 @@
                 <li class="nav__lista__item"><a href="trabajos.html" >TRABAJOS</a></li>
                 <li class="nav__lista__item"><a href="contacto.html" >CONTACTO</a></li>
             </ul>
-    </nav>
+        </nav>
     </header>
     <main>
         <section class="sobremi__contenedor">
-            <img class="sobremi__img1" src="./multimedia/sobremi1.jpg" alt="mujermodelando">
-            <p  class="texto__comun"  >
+            <div data-aos="flip-left" data-aos-duration="2000">
+                <img class="sobremi__img1" src="./multimedia/sobremi1.jpg" alt="mujermodelando">
+            </div>
+            <div data-aos="fade-left" data-aos-duration="2000">
+              <p  class="texto__comun"  >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptatem cum culpa quisquam cupiditate tempora odio magni, consequuntur eveniet reprehenderit possimus corporis maxime atque sit officiis minus laborum sapiente. Autem.
-            </p>
+             </p>
+            </div>
         </section>
         <section class="sobremi__contenedor derecha">
-            <img class="sobremi__img" src="./multimedia/sobre mi2.jpg" alt="mujermodelando" >
+            <div data-aos="zoom-in" data-aos-duration="2000">
+                 <img class="sobremi__img" src="./multimedia/sobre mi2.jpg" alt="mujermodelando" >
+            </div>
+            <div data-aos="fade-right" data-aos-duration="2000">
             <p class="texto__comun">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione quasi laborum provident cum quos, nesciunt excepturi! Labore voluptatibus eius, suscipit magnam architecto provident ipsam accusantium reprehenderit tenetur sapiente vero odio?
             </p>
+            </div>
         </section>
         <section class="sobremi__contenedor">
+            <div data-aos="zoom-out" data-aos-duration="2000">
             <img class="sobremi__img" src="./multimedia/taia.JPG" alt="mujermodelando">
+           </div>
             <p class="texto__comun">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi consectetur tempore, delectus cum sed qui non ut vitae laborum at soluta quod repellat minima neque, voluptas, ipsum expedita. Debitis, neque!<a class="texto__resaltado" href="https://www.instagram.com/taiacreative/" target="_blank">
                     taia creative</a>
@@ -47,9 +58,13 @@
         </section>
     </main>
     <footer>
-        <h5 class="footer__tx">© 2022 Ana Gles - Modelo</h5>
+        <h5>© 2022 Ana Gles - Modelo</h5>
          <a href="https://www.instagram.com/anush.itta/" target="_blank">
         <img class="footer__logoinstagram" src="./multimedia/instagramlogo.png" alt="logoinstagram"></a>
     </footer>
-    </body>
-    </html>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
+</body>
+</html>
