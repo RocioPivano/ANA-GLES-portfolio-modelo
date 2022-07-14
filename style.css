@@ -99,8 +99,13 @@ main{
 }
 /*HOME*/
 /*carrousel de imagenes*/
+@media only screen and (min-width: 800px){
 .carousel-inner{
-    padding: 10px;
+       padding: 30px 100px; 
+
+   
+    }
+        
 }
 
 /*SOBRE MI*/
@@ -177,41 +182,17 @@ footer{
     width: 100vw;
 } 
 }
-   
+  
 
 /*TRABAJOS*/  
-.trabajo__section1{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-       
+.carrousel__backround{
+    background-color:#EBD8D0;
+    opacity: 80%;
+    font-family: 'Poppins', sans-serif; font-family: 'Roboto', sans-serif;
+    color: #3D3D3D;
+    letter-spacing: 3px;
+    word-spacing: 3px;
 }
-.trabajo__section1 h4{
-    text-align: end;
-    margin: 20px;
-}
-
-.trabajo__img-verticales{
-     width: 30%;
-     margin: auto;
-}
-.trabajo__img-horizontales{
-    width: 50%;
-    padding: 20px;
-}
-.trabajo__section2{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-}
-.trabajo__section3{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
- }
 
 
 /*CONTACTO*/
