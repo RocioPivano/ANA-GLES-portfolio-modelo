@@ -37,7 +37,7 @@ header{
     letter-spacing: 6px;
 }
 
-.nav__lista__item__active{
+.nav__lista__item__activo{
     text-decoration: none;
     color: #838e83; 
     font-family: 'Roboto', sans-serif;
@@ -47,7 +47,7 @@ header{
     border: solid #838e83; 
     letter-spacing: 6px;
 }
-.nav__lista__item__active a{
+.nav__lista__item__activo a{
     text-decoration:none;
     color: #838e83; 
     font-family: 'Roboto', sans-serif;
