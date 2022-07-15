@@ -37,7 +37,7 @@ header{
     letter-spacing: 6px;
 }
 
-.nav__lista__item__active{
+.nav__lista__item__activo{
     text-decoration: none;
     color: #838e83; 
     font-family: 'Roboto', sans-serif;
@@ -47,7 +47,7 @@ header{
     border: solid #838e83; 
     letter-spacing: 6px;
 }
-.nav__lista__item__active a{
+.nav__lista__item__activo a{
     text-decoration:none;
     color: #838e83; 
     font-family: 'Roboto', sans-serif;
@@ -66,7 +66,7 @@ header{
     font-weight: 500;
     letter-spacing: 6px;
 }
-.active {
+.activo {
     text-decoration:none;
     color: #838e83; 
     font-family: 'Roboto', sans-serif;
@@ -95,18 +95,48 @@ body{
 }
 
 main{
-    background-color: #F3F5F6;
+    background-color: white;
+    margin-bottom: 10%;
 }
 /*HOME*/
-/*carrousel de imagenes*/
-@media only screen and (min-width: 800px){
-.carousel-inner{
-       padding: 30px 100px; 
-
-   
-    }
-        
+.home__container-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
 }
+.home__img-flex{
+    width: 25%;
+    margin: 10px;
+}
+.musas__inspiradoras{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: solid 2px #3D3D3D;
+
+}  
+.musas__inspiradoras h4{
+    width: fit-content;
+    padding: 5px;
+    background-color:#83b8c9;
+    font-family: 'Roboto', sans-serif; color:whitesmoke;
+    font-size: 40px;
+    height: 50px;
+    margin: 10px;
+
+} 
+
+.card{
+    display: flex;
+    margin: 10px;
+    width: 20%;
+}
+    
+
+
 
 /*SOBRE MI*/
 .sobremi__contenedor{
@@ -193,7 +223,10 @@ footer{
     letter-spacing: 3px;
     word-spacing: 3px;
 }
-
+.trabajemos__banner{
+    background-color: #EBD8D0;
+    display: flex;
+}
 
 /*CONTACTO*/
 .contacto__container{
