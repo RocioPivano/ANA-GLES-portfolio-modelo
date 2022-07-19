@@ -6,65 +6,31 @@
 header{
     background-color:  #F3F5F6;
     height: 25%;
-  
+  gi
 }
 .nav__H1{
     font-family: 'Roboto', sans-serif;
     color: #3D3D3D;
     font-size: 60px;
-    padding-top: 30px;
-    padding-left: 40px;
-    padding-bottom: 10px;
     letter-spacing: 8px;
+    padding: 30px;
     
     
-}
-.nav__lista{
-    display:flex;
-    list-style: none;
-    height: 70px;
-    align-items: center;
-    justify-content: space-between;
-  
-}
-.nav__lista__item a {
-    text-decoration: none;
-    color: #3D3D3D;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    margin: 0px 30px 30px 30px;
-    padding: 10px;
-    letter-spacing: 6px;
 }
 
-.nav__lista__item__activo{
-    text-decoration: none;
-    color: #838e83; 
-    font-family: 'Roboto', sans-serif;
-    margin: 0px 30px;
-    height: auto;
-    font-weight: 500;
-    border: solid #838e83; 
-    letter-spacing: 6px;
-}
-.nav__lista__item__activo a{
-    text-decoration:none;
-    color: #838e83; 
-    font-family: 'Roboto', sans-serif;
-    padding: 20px;
-    
-}
-/*AQUI EMPECE A PROBAR BOOTSTRAP EN EL NAV */
-.navbar-nav{
-    display: flex;
-    justify-content: space-between;
-}
 .nav-link{
     text-decoration: none;
     color: #3D3D3D;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     letter-spacing: 6px;
+}
+.nav-item{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nav-link:hover{
+    color:black;
 }
 .active {
     text-decoration:none;
@@ -75,7 +41,10 @@ header{
     border: solid #838e83; 
     letter-spacing: 6px;
 }
-
+.active a{
+    text-decoration:none;
+    color: #838e83; 
+}
 
 body{
     min-height: 100vh;
@@ -95,13 +64,48 @@ body{
 }
 
 main{
-    background-color: #F3F5F6;
+    background-color: white;
+    margin-bottom: 10%;
 }
 /*HOME*/
-/*carrousel de imagenes*/
-.carousel-inner{
-    padding: 10px;
+.home__container-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
 }
+.home__img-flex{
+    width: 25%;
+    margin: 10px;
+}
+.musas__inspiradoras{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: solid 2px #3D3D3D;
+
+}  
+.musas__inspiradoras h4{
+    width: fit-content;
+    padding: 5px;
+    background-color:#83b8c9;
+    font-family: 'Roboto', sans-serif; color:whitesmoke;
+    font-size: 40px;
+    height: 50px;
+    margin: 10px;
+
+} 
+
+.card{
+    display: flex;
+    margin: 10px;
+    width: 20%;
+}
+    
+
+
 
 /*SOBRE MI*/
 .sobremi__contenedor{
@@ -109,6 +113,8 @@ main{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
     
 }
 .derecha{
@@ -132,8 +138,16 @@ main{
     width: 400px ;
     margin: 30px;
 }
+@media only screen and (max-width: 450px){ 
+.sobremi__contenedor{
+    display: flex;
+    flex-direction: column;
+}
+.sobremi__img{
+    width: 400px;
+}
 
-
+}
 /*PORTFOLIO */ 
 .grilla{
     width: 95%;
@@ -177,42 +191,21 @@ footer{
     width: 100vw;
 } 
 }
-   
+  
 
 /*TRABAJOS*/  
-.trabajo__section1{
+.carrousel__backround{
+    background-color:#EBD8D0;
+    opacity: 80%;
+    font-family: 'Poppins', sans-serif; font-family: 'Roboto', sans-serif;
+    color: #3D3D3D;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+}
+.trabajemos__banner{
+    background-color: #EBD8D0;
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-       
 }
-.trabajo__section1 h4{
-    text-align: end;
-    margin: 20px;
-}
-
-.trabajo__img-verticales{
-     width: 30%;
-     margin: auto;
-}
-.trabajo__img-horizontales{
-    width: 50%;
-    padding: 20px;
-}
-.trabajo__section2{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-}
-.trabajo__section3{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
- }
-
 
 /*CONTACTO*/
 .contacto__container{
@@ -260,12 +253,42 @@ footer{
 }
 .index__img{
     height: 1000px
-/*la voy a acomodar con flexbox*/
-
-
-
 }
 
+@media only screen and (max-width: 450px){
+    .index-desktop{
+        display: none;
+    }
+    .index-movile{
+        display: block;
+       
+    }
+    .index__img-movile{
+         width: 400px;
+    }
+    .index__movile-h1{
+       font-family: 'Roboto', sans-serif;
+        color:#83b8c9;
+        font-size: 100px;
+        letter-spacing: 15px;
+        
+       
+    }     
+    .index__boton{
+        width: fit-content;
+        padding: 10px;
+        background-color:#83b8c9;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif; color:whitesmoke;
+        font-size: 40px;
+        position: fixed;
+        right: 100px;
+        top: 350px;
+        border-style: outset;   
+    }  
+        
+   
+}
 /*footer*/
 footer{
     background-color: #838e83;

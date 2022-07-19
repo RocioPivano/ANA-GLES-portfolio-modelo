@@ -5,27 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
     <title>ANA GLES / Home</title>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg header">
             <div class="container-fluid">
-              <a class="navbar-brand nav__H1" >ANA GLES</a>
+              <h1 class="nav__H1" >ANA GLES</h1>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    <a class="nav-link active" aria-current="page" href="home.html">HOME</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="sobremi.html">SOBRE MI</a>
@@ -51,20 +51,22 @@
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>            
+              
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner ratio ratio-21x9">
               <div class="carousel-item active">
-                <img src="./multimedia/home1.jpg" class="d-block w-100 ratio ratio-16x9" alt="mujermodelando">
+                <img src="./multimedia/home1.png" class="d-block w-100 " alt="mujermodelando">
               </div>
               <div class="carousel-item">
-                <img src="./multimedia/home2.jpg" class="d-block w-100 ratio ratio-16x9" alt="mujermodelando">
+                <img src="./multimedia/home2.png" class="d-block w-100" alt="mujermodelando">
               </div>
               <div class="carousel-item">
-                <img src="./multimedia/home3.jpg" class="d-block w-100 ratio ratio-16x9" alt="mujermodelando">
+                <img src="./multimedia/home3.png" class="d-block w-100" alt="mujermodelando">
               </div>
               <div class="carousel-item">
-                <img src="./multimedia/home4.jpg" class="d-block w-100 ratio ratio-16x9" alt="mujermodelando">
+                <img src="./multimedia/home4.png" class="d-block w-100" alt="mujermodelando">
               </div>
+              
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -75,8 +77,57 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+
+          <div class="ratio ratio-21x9">
+          <img src="./multimedia/home-abajo.png" alt="collagefotos">
+          </div>    
+          <div class="ratio ratio-21x9">
+            <img src="./multimedia/home-abajo2.png" alt="collagefotos">
+            </div> 
+        
+          <div class="home__container-flex">
+            <img class="home__img-flex" src="./multimedia/home-col1.jpg" alt="collagefotos">
+            <img  class="home__img-flex" src="./multimedia/home-col2.jpg" alt="collagefotos">
+            <img  class="home__img-flex" src="./multimedia/home-col3.jpg" alt="collagefotos">
+          </div> 
+          
+           <h4>Musas Inspiradoras</h4>
+          <section class="container-fluid">
+          <div class="row">
+             <div class="card col-lg-3, col-sm-6" style="width: 10rem;">
+                  <img src="./multimedia/card1.jpg" class="card-img-top" alt="portadadelibro">
+                  <div class="card-body">
+                    <p class="card-text">
+                    Donde cruzan los brujos, de Taisha Abelar. Podes escucharlo <a href="https://www.youtube.com/watch?v=aud9GaY_7-c&list=PL_3hZdY6UWFsXh3MK3UM42xGPkkVFtQlv">aquí</a></p>
+                  </div>
+             </div>    
+          
+             <div class="card col-lg-3, col-sm-6" style="width: 10rem;">
+                  <img src="./multimedia/card2.jpg" class="card-img-top" alt="portadadelibro">
+                  <div class="card-body">
+                    <p class="card-text">
+                   <a href="https://www.youtube.com/watch?v=gw0CYV_X2XI"  target="_blank">Caótica Ana</a> , de Julio Medem. </p>
+                  </div> 
+             </div>
+
+             <div class="card col-lg-3, col-sm-6" style="width: 10rem;">
+                 <img src="./multimedia/card3.jpg" class="card-img-top" alt="portadadelibro">
+                 <div class="card-body">
+                 <p class="card-text">Libro el manjar de los dioses </p>
+              </div>
+             </div>
+
+             <div class="card col-lg-3, col-sm-6" style="width: 10rem;">
+                  <img src="./multimedia/card4.jpg" class="card-img-top" alt="portadadelibro">
+                  <div class="card-body">
+                    <p class="card-text"><a href="https://www.youtube.com/watch?v=0_YJToyOp_4"  target="_blank">Cosmic creativity</a>, how art evolves consciousness: Alex Grey at TEDxMaui 2013
+                    </p>
+                  </div> 
+              </div> 
+            </div>          
+            </section>  
                  
-        </section>
+        
     </main>   
     <footer>
         <h5>© 2022 Ana Gles - Modelo</h5>
