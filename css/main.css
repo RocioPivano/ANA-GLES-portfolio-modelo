@@ -5,9 +5,100 @@
   align-items: center;
   margin-top: 20px;
   margin-bottom: 15px; }
+  .sobremi__contenedor .derecha {
+    flex-direction: row-reverse; }
   .sobremi__contenedor p {
     margin: 30px;
     padding: 10px;
     text-align: justify;
     font-size: 20px;
     color: #838e83; }
+  .sobremi__contenedor .sobremi__img {
+    width: 500px;
+    margin: 30px; }
+  .sobremi__contenedor .sobremi__img1 {
+    width: 400px;
+    margin: 30px; }
+
+@media only screen and (max-width: 450px) {
+  .sobremi__contenedor {
+    display: flex;
+    flex-direction: column; }
+  .sobremi__img {
+    width: 400px; } }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  background-color: #F3F5F6;
+  height: 25%; }
+
+.nav__H1 {
+  font-family: Roboto, sans-serif;
+  color: #838e83;
+  font-size: 60px;
+  letter-spacing: 8px;
+  padding: 30px; }
+
+.nav-item {
+  margin-left: 10px;
+  margin-right: 10px; }
+  .nav-item .nav-link {
+    text-decoration: none;
+    color: #838e83;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 6px; }
+    .nav-item .nav-link :hover {
+      color: black; }
+
+.active {
+  text-decoration: none;
+  color: #838e83;
+  font-family: 'Roboto', sans-serif;
+  height: auto;
+  font-weight: 500;
+  border: solid #838e83;
+  letter-spacing: 6px; }
+  .active a {
+    text-decoration: none;
+    color: #838e83; }
+
+body {
+  min-height: 100vh; }
+
+.texto__comun {
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: #3D3D3D;
+  letter-spacing: 3px;
+  word-spacing: 3px; }
+
+.texto__resaltado {
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: #3D3D3D;
+  letter-spacing: 3px;
+  word-spacing: 3px; }
+
+main {
+  background-color: white;
+  margin-bottom: 10%; }
+
+footer {
+  background-color: #838e83;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px; }
+  footer h5 {
+    color: black;
+    letter-spacing: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    word-spacing: 4px; }
+  footer .footer__logoinstagram {
+    height: 30px;
+    margin: 10px; }

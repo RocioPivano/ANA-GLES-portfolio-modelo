@@ -5,14 +5,33 @@
     align-items: center;
     margin-top: 20px;
     margin-bottom: 15px;
-
+    .derecha{
+        flex-direction: row-reverse;
+    }
     p{
      margin: 30px;
     padding: 10px;
     text-align: justify;
     font-size: 20px;
-    color: #838e83;   
+    color: $colorTextos1;   
     }  
+    .sobremi__img{
+        width: 500px;
+        margin: 30px;
+        
+    }
+    .sobremi__img1{
+        width: 400px ;
+        margin: 30px;
+    }
 }
-
+@media only screen and (max-width: 450px){ 
+    .sobremi__contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .sobremi__img{
+        width: 400px;
+    }
+ }
     
