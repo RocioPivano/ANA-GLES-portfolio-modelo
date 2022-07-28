@@ -52,18 +52,19 @@ body{
     min-height: 100vh;
 }
 
-.texto__comun{
-    font-family: 'Poppins', sans-serif; font-family: 'Roboto', sans-serif;
-    color: #3D3D3D;
-    letter-spacing: 3px;
-    word-spacing: 3px;
-   }
-.texto__resaltado{
-    font-family: 'Poppins', sans-serif; font-family: 'Roboto', sans-serif;
-    color: #3D3D3D;
-    letter-spacing: 3px;
-    word-spacing: 3px;
-}
+.texto__comun{ 
+        font-family: 'Poppins', sans-serif;
+        color: #3D3D3D;
+        letter-spacing: 3px;
+        word-spacing: 3px;
+ }
+.texto__resaltado{ 
+        font-family: 'Roboto', sans-serif;
+        color: #3D3D3D;
+        letter-spacing: 3px;
+        word-spacing: 3px;
+ }
+
 
 main{
     background-color: white;

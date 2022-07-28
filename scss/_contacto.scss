@@ -1,0 +1,6 @@
+.texto__comun{
+    @extend %textoComun;
+}
+.texto__resaltado{
+    @extend %textoResaltado,
+}
