@@ -4,3 +4,21 @@
 .texto__resaltado{
     @extend %textoResaltado,
 }
+.contacto__container{
+    display: flex;
+    align-items: center;
+    .contacto__img{
+    width: 40%;
+    margin: 30px;
+    }
+}
+
+.contacto__section__form{ 
+    display: flex;
+    background-color: #EBD8D0;
+    width: 30%;
+    margin: 30px;
+    height: 300px;
+ 
+
+}

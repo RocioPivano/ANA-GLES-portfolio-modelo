@@ -1,0 +1,42 @@
+.grilla{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px 250px 400px 250px 250px;
+    gap: 30px;
+    justify-content: center;
+    height: 100%;
+}
+.grilla__item{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    :hover {
+    transform: scale(1.3);
+    transition: 0.8s;
+    }
+    }
+.item1{
+    grid-row: span 2;
+    }
+.item5{
+    grid-column: span 2;
+}
+
+@media only screen and (max-width: 400px) {
+.grilla{
+    display:block;
+    
+}   
+.grilla__item img{
+    height: 300px;
+}
+header{
+    width: 100vw;
+    
+}
+footer{
+    width: 100vw;
+} 
+}
+  

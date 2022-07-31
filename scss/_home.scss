@@ -1,0 +1,34 @@
+.home__container-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.home__img-flex{
+    width: 25%;
+    margin: 10px;
+}
+.musas__inspiradoras{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: solid 2px #3D3D3D;
+    h4{
+    width: fit-content;
+    padding: 5px;
+    background-color:#83b8c9;
+    font-family: 'Roboto', sans-serif; color:whitesmoke;
+    font-size: 40px;
+    height: 50px;
+    margin: 10px;
+
+}  
+} 
+
+.card{
+    display: flex;
+    margin: 10px;
+    width: 20%;
+}
