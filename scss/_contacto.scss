@@ -4,21 +4,31 @@
 .texto__resaltado{
     @extend %textoResaltado,
 }
-.contacto__container{
-    display: flex;
-    align-items: center;
-    .contacto__img{
-    width: 40%;
-    margin: 30px;
-    }
+.contacto__main{
+    background-image:url(../multimedia/fondo-contacto.jpg);
+    background-size:auto;
+    margin-bottom: 0px;
+    height: 100vh;
 }
 
-.contacto__section__form{ 
+.contacto__container__padre{ 
     display: flex;
+    flex-direction:row;
+    justify-content: center;
+    .contacto__container__hijo{
     background-color: #EBD8D0;
-    width: 30%;
-    margin: 30px;
-    height: 300px;
- 
+    width: 60%;
+    padding: 30px;  
+    margin-top: 50px;
+        div{
+        padding-top: 10px;
+            h4{
+            text-align: center;
+            padding: 10px;
 
+            }
+           
+    
+    }
+    }
 }

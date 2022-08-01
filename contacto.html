@@ -46,15 +46,12 @@
           </nav>
         </nav>
     </header>
-    <main>
-            <section class="contacto__container" data-aos="fade-up" data-aos-duration="3000"  >
-                <img class="contacto__img" src="./multimedia/contacto.jpg" alt="mujermodelando">
-            </section>
-                
-            <section class= "contacto__section__form">
+    <main class="contacto__main">
+        <section class= "contacto__container__padre">
+          <div class="contacto__container__hijo">
                 <div>
                     <h4 class="texto__resaltado">Trabajemos juntos</h4>
-                    <p class="texto__comun"> Rellena este formulario y me pondré en contacto con vos
+                    <p class="texto__comun"> Rellena este formulario y me pondré en contacto contigo
                     </p>
                 </div>
                 <form>
@@ -72,18 +69,20 @@
                     </div>
                     <div>
                         <label class="texto__comun" for="Mensaje">Mensaje</label>
-                        <input type="text" id="Mensaje" name="mensaje">
+                        <input type="textarea" id="Mensaje" name="mensaje">
                    </div>                
-                        <button class="texto__comun">Enviar</button>
+                   <div></div>     
+                       <button class="texto__comun">Enviar</button>
+                   </div>
                 </form>
-            </section>
-      
-        </article>
-    <footer>
+          </div>     
+        </section>             
+      </main>
+      <footer>
             <h5>© 2022 Ana Gles - Modelo</h5>
              <a href="https://www.instagram.com/anush.itta/" target="_blank">
             <img class="footer__logoinstagram" src="./multimedia/instagramlogo.png" alt="logoinstagram"></a>
-    </footer>
+      </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init()
@@ -92,4 +91,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 
 </body>
-</html>
+</html>        
+      
+    
+    
