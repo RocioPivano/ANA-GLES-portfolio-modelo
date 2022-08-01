@@ -10,22 +10,11 @@
     width: 25%;
     margin: 10px;
 }
-.musas__inspiradoras{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border-top: solid 2px #3D3D3D;
-    h4{
-    width: fit-content;
-    padding: 5px;
-    background-color:#83b8c9;
-    font-family: 'Roboto', sans-serif; color:whitesmoke;
-    font-size: 40px;
-    height: 50px;
-    margin: 10px;
-
-}  
-} 
+.container-fluid{
+    background-image: url(../multimedia/fondo-contacto.jpg);
+    background-size: cover;
+    z-index: 100;
+}
 
 .card{
     display: flex;

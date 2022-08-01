@@ -1,14 +1,27 @@
 
 %textoComun{
         font-family: 'Poppins', sans-serif;
-        color: #3D3D3D;
+        color: $colorTextos2;
         letter-spacing: 3px;
         word-spacing: 3px;
 }
 
 %textoResaltado{ 
         font-family: 'Roboto', sans-serif;
-        color: #3D3D3D;
+        color: $colorTextos2;
         letter-spacing: 3px;
         word-spacing: 3px;
 }    
+%marginDe15{
+        margin-top: 15px;
+        margin-bottom: 15px;
+}
+%boton{
+        width: fit-content;
+        padding: 10px;
+        background-color:#83b8c9;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif; 
+        color: $colorGeneral;
+        border-style: outset;
+}

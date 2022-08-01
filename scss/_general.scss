@@ -3,18 +3,25 @@
     padding: 0;
 }
 
-header{
+nav{
     background-color: $colorGeneral;
-    height: 25%;
+    div{
+    @extend %marginDe15;
+    }
 
 }
+
 .nav__H1{
     font-family: Roboto, sans-serif;
     color: $colorTextos1;
     font-size: 60px;
     letter-spacing: 8px;
     padding: 30px;
-    
+    text-decoration: none;
+    &:hover{
+    color: $colorTextos2;
+    }
+ 
   
 }
 .nav-item{
@@ -69,6 +76,9 @@ body{
 main{
     background-color: white;
     margin-bottom: 10%;
+}
+.main__{
+    margin-bottom: 0px;
 }
 footer{
     background-color: #838e83;

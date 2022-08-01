@@ -1,0 +1,15 @@
+@mixin mediaQuery ($pantalla) {
+    @if $pantalla == "movile" {
+      @media screen and (max-width:320px){
+        @content
+      }  
+    }
+};
+
+@mixin mediaQuery ($pantalla) {
+    @if $pantalla == "desktop" {
+      @media screen and (min-width:720px){
+        @content
+      }  
+    }
+}
