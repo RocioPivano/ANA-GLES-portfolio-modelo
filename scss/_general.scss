@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto&display=swap');
 nav{
     background-color: $colorGeneral;
     div{
@@ -20,6 +20,10 @@ nav{
     text-decoration: none;
     &:hover{
     color: $colorTextos2;
+    }
+    @media only screen and (max-width:400px){
+        font-size: 40px;
+        padding: 20px;
     }
  
   

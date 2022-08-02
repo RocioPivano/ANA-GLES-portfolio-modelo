@@ -1,31 +1,28 @@
-.sobremi__contenedor {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 20px;
-  margin-bottom: 15px; }
-  .sobremi__contenedor .derecha {
-    flex-direction: row-reverse; }
-  .sobremi__contenedor p {
-    margin: 30px;
-    padding: 10px;
-    text-align: justify;
-    font-size: 20px;
-    color: #838e83; }
-  .sobremi__contenedor .sobremi__img {
-    width: 500px;
-    margin: 30px; }
-  .sobremi__contenedor .sobremi__img1 {
-    width: 400px;
-    margin: 30px; }
+@import url("https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto&display=swap");
+.texto__comun {
+  font-family: 'Poppins', sans-serif;
+  color: #3D3D3D;
+  letter-spacing: 3px;
+  word-spacing: 3px; }
 
-@media only screen and (max-width: 450px) {
-  .sobremi__contenedor {
-    display: flex;
-    flex-direction: column; }
-  .sobremi__img {
-    width: 400px; } }
+.texto__resaltado {
+  font-family: 'Roboto', sans-serif;
+  color: #3D3D3D;
+  letter-spacing: 3px;
+  word-spacing: 3px; }
+
+nav div {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.index__boton {
+  width: fit-content;
+  padding: 10px;
+  background-color: #83b8c9;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  color: #F3F5F6;
+  border-style: outset; }
 
 * {
   margin: 0;
@@ -43,6 +40,10 @@ nav {
   text-decoration: none; }
   .nav__H1:hover {
     color: #3D3D3D; }
+  @media only screen and (max-width: 400px) {
+    .nav__H1 {
+      font-size: 40px;
+      padding: 20px; } }
 
 .nav-item {
   margin-left: 10px;
@@ -105,31 +106,6 @@ footer {
     height: 30px;
     margin: 10px; }
 
-.texto__comun {
-  font-family: 'Poppins', sans-serif;
-  color: #3D3D3D;
-  letter-spacing: 3px;
-  word-spacing: 3px; }
-
-.texto__resaltado {
-  font-family: 'Roboto', sans-serif;
-  color: #3D3D3D;
-  letter-spacing: 3px;
-  word-spacing: 3px; }
-
-nav div {
-  margin-top: 15px;
-  margin-bottom: 15px; }
-
-.index__boton {
-  width: fit-content;
-  padding: 10px;
-  background-color: #83b8c9;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  color: #F3F5F6;
-  border-style: outset; }
-
 .contacto__main {
   background-image: url(../multimedia/fondo-contacto.jpg);
   background-size: auto;
@@ -162,25 +138,26 @@ nav div {
   width: 25%;
   margin: 10px; }
 
-.musas__inspiradoras {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  border-top: solid 2px #3D3D3D; }
-  .musas__inspiradoras h4 {
-    width: fit-content;
-    padding: 5px;
-    background-color: #83b8c9;
-    font-family: 'Roboto', sans-serif;
-    color: whitesmoke;
-    font-size: 40px;
-    height: 50px;
-    margin: 10px; }
+.musas {
+  background-image: url(../multimedia/musas-inspiradoras.jpg);
+  justify-content: space-evenly;
+  margin-top: 80px; }
+  .musas .row {
+    justify-content: space-evenly; }
+  .musas h4 {
+    font-family: 'Reenie Beanie';
+    text-align: center;
+    padding: 20px;
+    font-size: 100px; }
+    @media only screen and (max-width: 400px) {
+      .musas h4 {
+        font-size: 60px; } }
 
 .card {
   display: flex;
-  margin: 10px;
-  width: 20%; }
+  padding: 20px;
+  width: 20%;
+  margin-bottom: 30px; }
 
 .grilla {
   width: 95%;
@@ -239,30 +216,9 @@ nav div {
 .index__body {
   margin-bottom: 0px; }
 
-@media only screen and (max-width: 450px) {
-  .index-desktop {
-    display: none; }
+@media screen and (min-width: 720px) {
   .index-movile {
-    display: block; }
-  .index__img-movile {
-    width: 400px; }
-  .index__movile-h1 {
-    font-family: 'Roboto', sans-serif;
-    color: #83b8c9;
-    font-size: 100px;
-    letter-spacing: 15px; }
-  .index__boton {
-    width: fit-content;
-    padding: 10px;
-    background-color: #83b8c9;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    color: whitesmoke;
-    font-size: 40px;
-    position: fixed;
-    right: 100px;
-    top: 350px;
-    border-style: outset; } }
+    display: none; } }
 
 .carrousel__backround {
   background-color: #EBD8D0;
@@ -273,5 +229,62 @@ nav div {
   word-spacing: 3px; }
 
 .trabajemos__banner {
-  background-color: #EBD8D0;
-  display: flex; }
+  display: flex;
+  justify-content: center; }
+  .trabajemos__banner a {
+    font-family: 'Reenie Beanie';
+    text-decoration: none;
+    font-size: 50px;
+    color: #838e83; }
+
+@media only screen and (max-width: 400px) {
+  .trabajemos__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .trabajemos__container img {
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    .trabajemos__container .carrousel__backround {
+      font-size: 20px;
+      background-image: url(../multimedia/musas-inspiradoras.jpg);
+      color: #3D3D3D;
+      text-align: center;
+      padding: 10px;
+      opacity: 90%;
+      font-weight: 100; }
+  .trabajos__carrousel {
+    display: none; } }
+
+@media only screen and (min-width: 500px) {
+  .trabajemos__container {
+    display: none; } }
+
+.sobremi__contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 15px; }
+  .sobremi__contenedor .derecha {
+    flex-direction: row-reverse; }
+  .sobremi__contenedor p {
+    margin: 30px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 20px;
+    color: #838e83; }
+  .sobremi__contenedor .sobremi__img {
+    width: 500px;
+    margin: 30px; }
+  .sobremi__contenedor .sobremi__img1 {
+    width: 400px;
+    margin: 30px; }
+
+@media only screen and (max-width: 450px) {
+  .sobremi__contenedor {
+    display: flex;
+    flex-direction: column; }
+  .sobremi__img {
+    width: 400px; } }
