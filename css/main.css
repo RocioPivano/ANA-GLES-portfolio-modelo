@@ -101,7 +101,8 @@ footer {
     color: black;
     letter-spacing: 4px;
     font-family: 'Poppins', sans-serif;
-    word-spacing: 4px; }
+    word-spacing: 4px;
+    font-size: 14px; }
   footer .footer__logoinstagram {
     height: 30px;
     margin: 10px; }
@@ -216,9 +217,30 @@ footer {
 .index__body {
   margin-bottom: 0px; }
 
-@media screen and (min-width: 720px) {
+@media screen and (max-width: 400px) {
+  .index-desktop {
+    display: none; }
   .index-movile {
-    display: none; } }
+    display: block; }
+    .index-movile img {
+      width: 100%; }
+    .index-movile h1 {
+      font-family: 'Roboto', sans-serif;
+      color: #83b8c9;
+      font-size: 70px;
+      letter-spacing: 15px;
+      margin-left: 10%; }
+    .index-movile .index__boton {
+      font-size: 30px;
+      position: absolute;
+      left: 30%;
+      top: 250px; } }
+
+@media only screen and (min-width: 450px) {
+  .index-movile {
+    display: none;
+    right: 150px;
+    top: 300px; } }
 
 .carrousel__backround {
   background-color: #EBD8D0;
