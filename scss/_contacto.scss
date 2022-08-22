@@ -17,9 +17,10 @@
     justify-content: center;
     .contacto__container__hijo{
     background-color: #EBD8D0;
-    width: 60%;
+    width: 70%;
     padding: 30px;  
     margin-top: 50px;
+    margin-bottom: 50px;
         div{
         padding-top: 10px;
             h4{
@@ -32,3 +33,9 @@
     }
     }
 }
+@media screen and (max-width: 500px){
+.contacto__main{
+    height: 700px;
+}
+}
+    

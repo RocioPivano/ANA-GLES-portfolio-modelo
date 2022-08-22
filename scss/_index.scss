@@ -1,4 +1,4 @@
-.index__H1{
+.index__H1 {
     position: fixed;
     left: 80px;
     top: 10px;
@@ -8,57 +8,123 @@
     letter-spacing: 55px;
     text-align: center;
     z-index: 10;
-    
+
 }
-.index__boton{
+
+.index__boton {
     @extend %boton;
     font-size: 40px;
     position: fixed;
     right: 100px;
     top: 300px;
-    &:hover{
-    transform: scale(1.1);
-    transition: 1s;
-    color: $colorGeneral;
-           
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 1s;
+        color: $colorGeneral;
+
     }
-}   
-.index__body{
+}
+
+.index__body {
     margin-bottom: 0px;
 }
 
 
-@media screen and (max-width: 400px){
-    .index-desktop{
-    display: none;
+@media screen and (max-width: 600px) {
+    .index-desktop {
+        display: none;
     }
-    .index-movile{
-    display: block; 
-    img{
-        width: 100%;
-        }  
-    h1{
-       font-family: 'Roboto', sans-serif;
-       color:#83b8c9;
-       font-size: 70px;
-       letter-spacing: 15px; 
-       margin-left: 10%;   
-       } 
-    .index__boton{
-        font-size: 30px;
-        position: absolute;
-        left: 30%;
-        top: 250px;
 
-    }
+    .index-movile {
+        display: block;
+
+        img {
+            width: 100%;
+        }
+
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            color: #83b8c9;
+            font-size: 70px;
+            letter-spacing: 15px;
+            margin-left: 10%;
+        }
+
+        .index__boton {
+            font-size: 30px;
+            position: absolute;
+            left: 30%;
+            top: 250px;
+
+        }
     }
 }
-@media only screen and (min-width:450px){
-        .index-movile{
-        display: none; 
+
+@media only screen and (min-width:801px) {
+    .index-movile {
+        display: none;
         right: 150px;
         top: 300px;
 
-        }
+    }
 }
 
+@media screen and (min-width:601px) and (max-width: 800px){
+    .index-desktop {
+        display: none;
+    }
+
+    .index-movile {
+        display: block;
+
+        img {
+            width: 100%;
+        }
+
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            color: #83b8c9;
+            font-size: 5rem;
+            letter-spacing: 15px;
+            margin-left: 10%;
+        }
+
+        .index__boton {
+            font-size: 30px;
+            position: absolute;
+            left: 35%;
+            top: 200px;
+
+        }
+    }
+}
+@media screen and (min-width:801px) and (max-width: 1199px){
+    .index-movile {
+        display: none;
+    }
+
+    .index-desktop {
+        display: block;
+
+        img {
+            width: 100%;
+        }
+
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            color: #EBD8D0;
+            font-size: 120px;
+            letter-spacing: 15px;
+            text-align: center;
+        }
+
+        .index__boton {
+            font-size: 30px;
+            position: absolute;
+            left: 75%;
+            top: 300px;
+
+        }
+    }
+}
